@@ -18,5 +18,10 @@ void testTshirtSize() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
+    // Failed case, not considered in implementation
+    assert(size(38) == 'S');   
+    assert(size(42) == 'L');   
+    
     std::cout << "All is well (maybe!)\n";
 }
+
